@@ -10,6 +10,9 @@ import { Button }
 import { Input } 
   from '../../components/shared'
 
+import styles
+  from '../../assets/style'
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
@@ -17,7 +20,7 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={ styles.container}>
         <Text>HOME SCREEN</Text>
         <Button label="Label" top={20} />
         <Input labelText="Input Label" />

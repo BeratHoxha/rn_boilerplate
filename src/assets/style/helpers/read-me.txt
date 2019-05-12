@@ -1,0 +1,36 @@
+Column: 
+  column - Column
+  columnCenter - vertical/horizontal center
+  columnEnd - vertical/horizontal end
+
+  columnVrtEnd - horizontal:start vertical:end
+  columnVrtCenter - horizontal:start vertical:center
+
+  columnHrzEnd - horizontal:end vertical:start
+  columnHrzCenter - horizontal:center vertical:start
+
+  columnCenterEnd - horizontal:center vertical:end
+  columnEndCenter - horizontal:end vertical:center
+
+  columnSpaceBtw - horizontal:start
+  columnSpaceBtwCenter - horizontal:center
+  columnSpaceBtwEnd - horizontal:end
+
+
+Row: 
+  row - Row
+  rowCenter - vertical/horizontal center
+  rowEnd - vertical/horizontal end
+
+  rowHrzEnd - horizontal:end vertical:start
+  rowHrzCenter - horizontal:center vertical:start
+
+  rowVrtEnd - horizontal:start vertical:end
+  rowVrtCenter - horizontal:start vertical:center
+
+  rowCenterEnd - horizontal:center vertical:end
+  rowEndCenter - horizontal:end vertical:center
+
+  rowSpaceBtw - vertical:start
+  rowSpaceBtwCenter - vertical:center
+  rowSpaceBtwEnd - vertical:end
