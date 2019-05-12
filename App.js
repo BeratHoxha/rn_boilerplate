@@ -6,8 +6,8 @@ import { Platform, StatusBar, StyleSheet, View }
 import { AppLoading, Asset, Font, Icon }
   from 'expo';
 
-import AppNavigator 
-  from './src/navigation/AppNavigator';
+import RenderAppNav 
+  from './src/RenderAppNav';
 
 import store 
   from './src/store';
@@ -34,7 +34,7 @@ export default class App extends React.Component {
         <Provider store={ store }>
           <View style={styles.container}>
             {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-            <AppNavigator />
+            <RenderAppNav />
           </View>
         </Provider>
       );
