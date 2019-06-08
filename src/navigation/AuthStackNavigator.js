@@ -13,27 +13,12 @@ import RegisterScreen
 
 const AuthStackNavigator = createStackNavigator(
   {
-    Login: {
-      screen: LoginScreen,
-      navigationOptions: {
-        header: null,
-      }
-    },
-    Register: {
-      screen: RegisterScreen,
-      navigationOptions: {
-        header: null,
-      }
-    },
+    Login: LoginScreen,
+    Register: RegisterScreen,
   },
   {
-    cardStyle: {
-      backgroundColor: '#fff',
-    },
-    navigationOptions: () => ({
-      header: false,
-      swipeEnabled: false,
-    }),
+    headerMode: 'none',
+    navigationOptions: {},
   }
 );
 

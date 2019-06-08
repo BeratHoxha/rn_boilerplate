@@ -11,21 +11,11 @@ import MainTabNavigator
 
 const MainStackNavigator = createStackNavigator(
   {
-    MainTabNavigator:{
-      screen: MainTabNavigator,
-      navigationOptions: {
-        header: null,
-      }
-    },
+    MainTabNavigator,
   },
   {
-    cardStyle: {
-      backgroundColor: '#fff',
-    },
-    navigationOptions: () => ({
-      header: false,
-      swipeEnabled: false,
-    }),
+    headerMode: 'none',
+    navigationOptions: {},
   }
 );
 
