@@ -13,7 +13,7 @@ function setTopLevelNavigator(navigatorRef) {
 }
 
 function navigate(routeName, params) {
-  if(routeName == 'AuthStackNavigator'){
+  if(routeName == 'AuthScreens'){
     removeToken()
   }
   
