@@ -9,6 +9,8 @@ import { changeLanguage }
   from './actions/language'
 import I18n, { switchLanguage } 
   from './translations'
+import NavigationService 
+  from './helpers/navigationService'
 
 class RenderAppNav extends Component {
   componentWillMount(){
@@ -27,7 +29,12 @@ class RenderAppNav extends Component {
     let { language } = this.props
 
     return( 
-      <AppNavigator screenProps={{language}}  />
+      <AppNavigator 
+        screenProps={{language}}
+        ref={ navigatorRef => {
+          NavigationService.setTopLevelNavigator(navigatorRef);
+        }} 
+      />
     )
   }
 }
